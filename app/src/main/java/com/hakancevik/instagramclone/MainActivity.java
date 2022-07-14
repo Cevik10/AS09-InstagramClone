@@ -35,14 +35,13 @@ public class MainActivity extends AppCompatActivity {
         // to keep account open
         FirebaseUser currentUser = auth.getCurrentUser();
         if (currentUser != null) {
-            Intent intent = new Intent(MainActivity.this,FeedActivity.class);
+            Intent intent = new Intent(MainActivity.this, FeedActivity.class);
             startActivity(intent);
             finish();
         }
 
 
     }
-
 
 
     public void signIn(View view) {
@@ -69,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
-
 
 
     }

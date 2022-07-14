@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/selectImage"
-        android:layout_width="244dp"
-        android:layout_height="201dp"
+        android:layout_width="262dp"
+        android:layout_height="200dp"
         android:layout_marginTop="57dp"
         android:onClick="selectImage"
         app:layout_constraintEnd_toEndOf="parent"
