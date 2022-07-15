@@ -1,4 +1,4 @@
-package com.hakancevik.instagramclone;
+package com.hakancevik.instagramclone.view;
 
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
@@ -13,10 +13,7 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
-import android.graphics.ImageDecoder;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
@@ -35,7 +32,6 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.hakancevik.instagramclone.databinding.ActivityUploadBinding;
 
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.UUID;
 
@@ -191,7 +187,7 @@ public class UploadActivity extends AppCompatActivity {
                                 @Override
                                 public void onSuccess(DocumentReference documentReference) {
 
-                                    Intent intent = new Intent(UploadActivity.this,FeedActivity.class);
+                                    Intent intent = new Intent(UploadActivity.this, FeedActivity.class);
                                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                     startActivity(intent);
 
